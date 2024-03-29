@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: rgb(0, 122, 144);
+    background-color: rgb(1, 130, 199);
 }
 
 h1, h3 {
@@ -15,14 +15,14 @@ h1, h3 {
 }
 
 #chance {
-    margin-top: 7%;
+    margin-top: 5%;
 }
 
 #inputs {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin-top: 6%;
+    margin-top: 5%;
 }
 
 #row-1, #row-2, #row-3 {
@@ -37,6 +37,9 @@ h1, h3 {
     margin: 2px;
     border-radius: 20px;
     font-size: 35px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 5px 5px 5px black;
 }
 
 #reset {
@@ -64,6 +67,21 @@ h1, h3 {
     color: white;
     cursor: pointer;
 }
-#sound{
+#mp3{
     display: none;
+}
+#resultWatermelonWin{
+    margin: 5px;
+    text-align: center;
+    font-family:'Franklin Gothic Medium';
+}
+#resultOrangeWin{
+    font-family:'Franklin Gothic Medium';
+    text-align: center;
+}
+#resultText{
+    font-size: 1.5em;
+}
+#heading{
+    color: rgb(217, 255, 0);
 }

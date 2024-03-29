@@ -1,6 +1,10 @@
 var chance = "Watermelon"
 var player = chance + "'s chance"
 var disabledBtn = 0
+var countWatermelonWin=0;
+var countOrangeWin=0;
+
+
 
 document.getElementById("chance").innerHTML = player
 
@@ -16,125 +20,180 @@ function check() {
     var btn9 = document.getElementById("btn9").innerHTML
     var result = document.getElementById("resultText")
     var reset = document.getElementById("reset-btn")
+    var resultWatermelonWin = document.getElementById("resultWatermelonWin")
+    var resultOrangeWin = document.getElementById("resultOrangeWin")
+    var mp3 = document.getElementById("mp3")
 
     if (btn1 === "🍉" && btn2 === "🍉" && btn3 === "🍉") {
         disable()
+        result.style.color = "rgb(106, 18, 18)"
         result.innerHTML = "Watermelon won !"
+        mp3.innerHTML='<audio controls autoplay id="sound"><source src="Watermelon.mp3" type="audio/mpeg"></audio>'
         result.style.visibility = "visible"
         reset.style.visibility = "visible"
+        countWatermelonWin++
     }
 
     else if (btn4 === "🍉" && btn5 === "🍉" && btn6 === "🍉") {
         disable()
+        result.style.color = "rgb(106, 18, 18)"
         result.innerHTML = "Watermelon won !"
+        mp3.innerHTML='<audio controls autoplay id="sound"><source src="Watermelon.mp3" type="audio/mpeg"></audio>'
         result.style.visibility = "visible"
         reset.style.visibility = "visible"
+        countWatermelonWin++
     }
 
     else if (btn7 === "🍉" && btn8 === "🍉" && btn9 === "🍉") {
         disable()
+        result.style.color = "rgb(106, 18, 18)"
         result.innerHTML = "Watermelon won !"
+        mp3.innerHTML='<audio controls autoplay id="sound"><source src="Watermelon.mp3" type="audio/mpeg"></audio>'
         result.style.visibility = "visible"
         reset.style.visibility = "visible"
+        countWatermelonWin++
     }
 
     else if (btn1 === "🍉" && btn4 === "🍉" && btn7 === "🍉") {
         disable()
+        result.style.color = "rgb(106, 18, 18)"
         result.innerHTML = "Watermelon won !"
+        mp3.innerHTML='<audio controls autoplay id="sound"><source src="Watermelon.mp3" type="audio/mpeg"></audio>'
         result.style.visibility = "visible"
         reset.style.visibility = "visible"
+        countWatermelonWin++
     }
 
     else if (btn2 === "🍉" && btn5 == "🍉" && btn8 === "🍉") {
         disable()
+        result.style.color = "rgb(106, 18, 18)"
         result.innerHTML = "Watermelon won !"
+        mp3.innerHTML='<audio controls autoplay id="sound"><source src="Watermelon.mp3" type="audio/mpeg"></audio>'
         result.style.visibility = "visible"
         reset.style.visibility = "visible"
+        countWatermelonWin++
     }
 
     else if (btn3 === "🍉" && btn6 === "🍉" && btn9 === "🍉") {
         disable()
+        result.style.color = "rgb(106, 18, 18)"
         result.innerHTML = "Watermelon won !"
+        mp3.innerHTML='<audio controls autoplay id="sound"><source src="Watermelon.mp3" type="audio/mpeg"></audio>'
         result.style.visibility = "visible"
         reset.style.visibility = "visible"
+        countWatermelonWin++
     }
 
     else if (btn1 === "🍉" && btn5 === "🍉" && btn9 === "🍉") {
         disable()
+        result.style.color = "rgb(106, 18, 18)"
         result.innerHTML = "Watermelon won !"
+        mp3.innerHTML='<audio controls autoplay id="sound"><source src="Watermelon.mp3" type="audio/mpeg"></audio>'
         result.style.visibility = "visible"
         reset.style.visibility = "visible"
+        countWatermelonWin++
     }
 
     else if (btn3 === "🍉" && btn5 === "🍉" && btn7 === "🍉") {
         disable()
+        result.style.color = "rgb(106, 18, 18)"
         result.innerHTML = "Watermelon won !"
+        mp3.innerHTML='<audio controls autoplay id="sound"><source src="Watermelon.mp3" type="audio/mpeg"></audio>'
         result.style.visibility = "visible"
         reset.style.visibility = "visible"
+        countWatermelonWin++
     }
 
     else if (btn1 === "🍊" && btn2 === "🍊" && btn3 === "🍊") {
         disable()
+        result.style.color = "orange"
         result.innerHTML = "Orange won !"
+        mp3.innerHTML='<audio controls autoplay id="sound"><source src="Orange.mp3" type="audio/mpeg"></audio>'
         result.style.visibility = "visible"
         reset.style.visibility = "visible"
+        countOrangeWin++
     }
 
     else if (btn4 === "🍊" && btn5 === "🍊" && btn6 === "🍊") {
         disable()
+        result.style.color = "orange"
         result.innerHTML = "Orange won !"
+        mp3.innerHTML='<audio controls autoplay id="sound"><source src="Orange.mp3" type="audio/mpeg"></audio>'
         result.style.visibility = "visible"
         reset.style.visibility = "visible"
+        countOrangeWin++
     }
 
     else if (btn7 === "🍊" && btn8 === "🍊" && btn9 === "🍊") {
         disable()
+        result.style.color = "orange"
         result.innerHTML = "Orange won !"
+        mp3.innerHTML='<audio controls autoplay id="sound"><source src="Orange.mp3" type="audio/mpeg"></audio>'
         result.style.visibility = "visible"
         reset.style.visibility = "visible"
+        countOrangeWin++
     }
 
     else if (btn1 === "🍊" && btn4 === "🍊" && btn7 === "🍊") {
         disable()
+        result.style.color = "orange"
         result.innerHTML = "Orange won !"
+        mp3.innerHTML='<audio controls autoplay id="sound"><source src="Orange.mp3" type="audio/mpeg"></audio>'
         result.style.visibility = "visible"
         reset.style.visibility = "visible"
+        countOrangeWin++
     }
 
     else if (btn2 === "🍊" && btn5 == "🍊" && btn8 === "🍊") {
         disable()
+        result.style.color = "orange"
         result.innerHTML = "Orange won !"
+        mp3.innerHTML='<audio controls autoplay id="sound"><source src="Orange.mp3" type="audio/mpeg"></audio>'
         result.style.visibility = "visible"
         reset.style.visibility = "visible"
+        countOrangeWin++
     }
 
     else if (btn3 === "🍊" && btn6 === "🍊" && btn9 === "🍊") {
         disable()
+        result.style.color = "orange"
         result.innerHTML = "Orange won !"
+        mp3.innerHTML='<audio controls autoplay id="sound"><source src="Orange.mp3" type="audio/mpeg"></audio>'
         result.style.visibility = "visible"
         reset.style.visibility = "visible"
+        countOrangeWin++
     }
 
     else if (btn1 === "🍊" && btn5 === "🍊" && btn9 === "🍊") {
         disable()
+        result.style.color = "orange"
         result.innerHTML = "Orange won !"
+        mp3.innerHTML='<audio controls autoplay id="sound"><source src="Orange.mp3" type="audio/mpeg"></audio>'
         result.style.visibility = "visible"
         reset.style.visibility = "visible"
+        countOrangeWin++
     }
 
     else if (btn3 === "🍊" && btn5 === "🍊" && btn7 === "🍊") {
         disable()
+        result.style.color = "orange"
         result.innerHTML = "Orange won !"
+        mp3.innerHTML='<audio controls autoplay id="sound"><source src="Orange.mp3" type="audio/mpeg"></audio>'
         result.style.visibility = "visible"
         reset.style.visibility = "visible"
+        countOrangeWin++
     }
 
     else if (disabledBtn === 9) {
         disable()
         result.innerHTML = "Match Draw !"
+        mp3.innerHTML='<audio controls autoplay id="sound"><source src="Draw.mp3" type="audio/mpeg"></audio>'
         result.style.visibility = "visible"
         reset.style.visibility = "visible"
+        countOrangeWin++
     }
+    resultWatermelonWin.innerHTML="🍉(Watermelon) won- "+countWatermelonWin
+    resultOrangeWin.innerHTML="🍊(orange) won- "+countOrangeWin
 
 }
 
@@ -181,3 +240,4 @@ function reset() {
     document.getElementById("resultText").style.visibility = "hidden"
     disabledBtn = 0
 }
+
